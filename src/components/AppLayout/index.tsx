@@ -15,7 +15,7 @@ const AppLayout = ({
 }: AppLayoutProps) => (
   <div>
     <Header />
-    <div className="container mt-3">
+    <div className="container mt-4">
       {children}
     </div>
   </div>

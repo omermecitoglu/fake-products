@@ -12,6 +12,7 @@ function fetchAPI<T>(endPoint: string) {
 export type Product = {
   id: number,
   title: string,
+  originalPrice: number,
   price: number,
   description: string,
   category: string,
