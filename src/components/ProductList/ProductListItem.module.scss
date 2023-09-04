@@ -1,0 +1,13 @@
+.productThumbnail {
+  border-bottom: 0.25rem solid #495057;
+
+  &:hover {
+    border-bottom-color: #ef5285;
+  }
+}
+
+.productImage {
+  width: 100% !important;
+  height: 20rem !important;
+  object-fit: contain;
+}
