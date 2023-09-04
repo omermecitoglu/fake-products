@@ -1,7 +1,7 @@
+import ProductListPage from "./products/page";
+
 const HomePage = async () => {
-  return (
-    <div>Home Page</div>
-  );
+  return <ProductListPage limit={10} />;
 };
 
 export default HomePage;
