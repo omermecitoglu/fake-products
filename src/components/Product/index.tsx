@@ -6,9 +6,22 @@ import type { Product } from "~/core/products";
 import styles from "./Product.module.scss";
 import ProductBreadcrumb from "./ProductBreadcrumb";
 
+/**
+ * Props for the ProductTemplate component.
+ *
+ * @property {Product} product - The product data to be displayed.
+ */
+
 type ProductTemplateProps = {
   product: Product,
 };
+
+/**
+ * The ProductTemplate component for displaying product details.
+ *
+ * @param {ProductTemplateProps} props - The props for the ProductTemplate component.
+ * @returns {JSX.Element} The JSX element representing the ProductTemplate component.
+ */
 
 const ProductTemplate = ({
   product,

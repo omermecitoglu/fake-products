@@ -6,9 +6,22 @@ import Price from "~/components/Price";
 import type { Product } from "~/core/products";
 import styles from "./ProductListItem.module.scss";
 
+/**
+ * Props for the ProductListItem component.
+ *
+ * @property {Product} product - The product data to be displayed.
+ */
+
 type ProductListItemProps = {
   product: Product,
 };
+
+/**
+ * The ProductListItem component for displaying individual product items.
+ *
+ * @param {ProductListItemProps} props - The props for the ProductListItem component.
+ * @returns {JSX.Element} The JSX element representing the ProductListItem component.
+ */
 
 const ProductListItem = ({
   product,

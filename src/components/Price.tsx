@@ -4,9 +4,22 @@ import { convertCurrency } from "~/core/currency";
 import { useAppSelector } from "~/redux/hooks";
 import { useGetCurrencyDataQuery } from "~/redux/services/currencyApi";
 
+/**
+ * Props for the Price component.
+ *
+ * @property {number} value - The numerical value to be formatted as a price.
+ */
+
 type PriceProps = {
   value: number,
 };
+
+/**
+ * The Price component for displaying formatted prices in the selected currency.
+ *
+ * @param {PriceProps} props - The props for the Price component.
+ * @returns {JSX.Element} The JSX element representing the Price component.
+ */
 
 const Price = ({
   value,

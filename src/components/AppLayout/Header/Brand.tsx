@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
+/**
+ * The Brand component representing the website's brand logo and name.
+ *
+ * @returns {JSX.Element} The JSX element representing the Brand component.
+ */
+
 const Brand = () => (
   <Link href="/" className="navbar-brand">
     <Image

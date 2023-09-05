@@ -3,10 +3,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames";
 import React from "react";
 
+/**
+ * Props for the RatingStars component.
+ *
+ * @property {number} rate - The star rating value (e.g., 4.5).
+ * @property {number} count - The number of reviews.
+ */
+
 type RatingStarsProps = {
   rate: number,
   count: number,
 };
+
+/**
+ * The RatingStars component for displaying a star rating with the count of reviews.
+ *
+ * @param {RatingStarsProps} props - The props for the RatingStars component.
+ * @returns {JSX.Element} The JSX element representing the RatingStars component.
+ */
 
 const RatingStars = ({
   rate,

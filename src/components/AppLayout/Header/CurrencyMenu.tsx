@@ -5,6 +5,12 @@ import { currencyIcon } from "~/core/currency";
 import { setSelectedCurrency } from "~/redux/features/currency";
 import { useAppDispatch, useAppSelector } from "~/redux/hooks";
 
+/**
+ * The CurrencyMenu component for selecting and displaying currency options.
+ *
+ * @returns {JSX.Element} The JSX element representing the CurrencyMenu component.
+ */
+
 const CurrencyMenu = () => {
   const availableCurrencies = useAppSelector(state => state.currency.list);
   const selectedCurrency = useAppSelector(state => state.currency.selected);
