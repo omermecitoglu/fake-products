@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "products",
+  "name": "fake-products",
   "version": "1.0.0",
   "scripts": {
     "prebuild": "ts-unused-exports tsconfig.json --excludePathsFromReport='app;pages'",
