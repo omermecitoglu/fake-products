@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "cypress open",
-    "prebuild": "ts-unused-exports tsconfig.json --excludePathsFromReport='app;pages'",
+    "prebuild": "ts-unused-exports tsconfig.json --excludePathsFromReport='app;cypress'",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "dev": "next dev",
