@@ -4,7 +4,6 @@ const apiBaseURL = "http://api.exchangeratesapi.io/v1/latest";
 
 async function fetchJSON<T = unknown>(url: RequestInfo | URL, options?: RequestInit): Promise<T> {
   const response = await fetch(url, options);
-  console.log("fetched");
   return await response.json();
 }
 
