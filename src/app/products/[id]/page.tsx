@@ -11,7 +11,7 @@ const ProductPage = async ({
   params,
 }: ProductPageProps) => {
   const product = await getProduct(parseInt(params.id));
-  return <Product {...product} />;
+  return <Product product={product} />;
 };
 
 export default ProductPage;

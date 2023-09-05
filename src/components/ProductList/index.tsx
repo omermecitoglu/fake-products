@@ -15,7 +15,7 @@ const ProductList = ({
     {breadcrumb && <ProductListBreadcrumb />}
     <div className="row">
       {collection.map(product =>
-        <ProductListItem key={product.id} {...product}/>
+        <ProductListItem key={product.id} product={product} />
       )}
     </div>
   </div>

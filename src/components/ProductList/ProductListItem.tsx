@@ -2,10 +2,17 @@ import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Price from "~/components/Price";
 import type { Product } from "~/core/products";
 import styles from "./ProductListItem.module.scss";
 
-const ProductListItem = (product: Product) => {
+type ProductListItemProps = {
+  product: Product,
+};
+
+const ProductListItem = ({
+  product,
+}: ProductListItemProps) => {
   return (
     <div className="col-xl-3 col-lg-4 col-sm-6 mb-3">
       <Link href={`/products/${product.id}`} className="mb-3">
@@ -27,7 +34,9 @@ const ProductListItem = (product: Product) => {
             {product.title}
           </Link>
         </h3>
-        <span className="text-muted">${product.price}</span>
+        <span className="text-muted">
+          <Price value={product.price} />
+        </span>
       </div>
     </div>
   );
