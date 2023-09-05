@@ -15,6 +15,7 @@ This is the README file for the "fake-products" project. This project is a web a
 
 The project includes several npm scripts for development and build tasks:
 
+- `npm test`: Run Cypress tests for your application.
 - `npm run prebuild`: Runs `ts-unused-exports` to check for unused exports in TypeScript files, excluding paths in 'app' and 'pages'.
 - `npm run lint`: Lint your code using Next.js's built-in linting.
 - `npm run lint:fix`: Automatically fix linting issues.
@@ -42,6 +43,7 @@ The project relies on the following dependencies:
 - `@next/eslint-plugin-next` for Next.js ESLint rules.
 - `@types/node` and `@types/react` for TypeScript type definitions.
 - `@typescript-eslint/eslint-plugin` for TypeScript ESLint rules.
+- `cypress` for e2e and component testing.
 - `eslint` and `eslint-plugin-import` for linting.
 - `eslint-plugin-unused-imports` for detecting unused imports.
 - `ts-unused-exports` for checking unused exports in TypeScript files.
