@@ -3,6 +3,7 @@ import "./AppLayout.scss";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { type ReactNode } from "react";
 import Header from "./Header";
+import Providers from "./Providers";
 
 config.autoAddCss = false;
 
@@ -14,10 +15,12 @@ const AppLayout = ({
   children,
 }: AppLayoutProps) => (
   <div>
-    <Header />
-    <div className="container mt-4">
-      {children}
-    </div>
+    <Providers>
+      <Header />
+      <div className="container mt-4">
+        {children}
+      </div>
+    </Providers>
   </div>
 );
 
